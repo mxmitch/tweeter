@@ -1,0 +1,16 @@
+/* Tablet Screen */
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-wrap: row wrap;
+  }
+
+  #hero {
+    width: 40%;
+    margin: 3%;
+  }
+
+  main {
+    width: 60%;
+  }
+}

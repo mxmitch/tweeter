@@ -1,0 +1,19 @@
+#hero {
+  position: relative;
+  text-align: center;
+  top: 120px;
+  height: 400px;
+  width: 100%;
+  background-color: #d89922;
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+  margin-bottom: 1em;
+}
+
+header h2 {
+  color: #FFF;
+  margin: 0 auto;
+}
+
+header img {
+  margin-top: 1em;
+}

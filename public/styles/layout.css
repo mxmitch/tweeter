@@ -6,7 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -15,11 +18,112 @@ html {
  */
 
 body {
+  width: 100%;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Bungee', cursive;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+main {
+  position: relative;
+  width: 100%;
+  top: 120px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin: 0 auto;
+  background-color: #f4f1ec;
+}
+
+#new-tweet {
+  display: none;
+  margin: 5%;
+}
+
+#tweet-container {
+  margin: 5%;
+}
+
+.tweet {
+  position: relative;
+  border: 3px solid black;
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1em;
+  font-size: 18px;
+}
+
+#error {
+  display: none;
+  border: 3px solid red;
+  color: red;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+textarea {
+  width: 100%;
+  height: min-content;
+}
+
+.tweet:hover {
+  box-shadow: 5px 5px rgb(64, 86, 161, 0.25);
+}
+
+.tweet:hover .username {
+  visibility: visible;
+}
+
+.tweet img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1em;
+}
+
+.tweetText {
+  clear: both;
+  border-bottom: 3px solid black;
+  margin-bottom: 0.5em;
+  padding-bottom: 1em;
+}
+
+.tweet footer {
+  font-size: 12px;
+}
+
+.name {
+  float: left;
+  padding-left: 0.75em;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+
+.username {
+  visibility: hidden;
+  float: right;
+  opacity: 50%;
+  color: #4056a1;
+  margin-top: 15px;
+}
+
+.social-media-icons {
+  position: absolute;
+  right: 1.5em;
+  bottom: 0.5em;
+  color: #4056a1;
+
+}
+
+.social-media-icons ul li {
+  list-style-type: none;
+  display: inline;
+  padding-left: 0.25em;
+
+}

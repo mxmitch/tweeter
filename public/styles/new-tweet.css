@@ -1,0 +1,34 @@
+form {
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+textarea {
+  overflow: auto;
+  height: 41px;
+  background-color: #f4f1eb;
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid black;
+  font-size: 20px;
+  color: #000;
+}
+
+form span {
+  color: #545149;
+  font-size: 24px;
+  float: right;
+  font-family: Bungee;
+}
+
+form input {
+  background-color: #4056a1;
+  font-size: 16px;
+  font-family: Bungee;
+  color: #FFF;
+  padding: 0.25em;
+}
+
+.counter {
+  font-size: 16px;
+}
