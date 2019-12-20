@@ -14,7 +14,11 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     if (window.scrollY === 0) {
-      $(".header-padding span").show();
+      if ($("#new-tweet").is(":hidden")) {
+        $(".header-padding span").show();
+      } else {
+        $(".header-padding span").hide();
+      }
       $("#back-to-top").hide();
     } else {
       $(".header-padding span").hide();
