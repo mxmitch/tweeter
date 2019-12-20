@@ -8,29 +8,27 @@
 
 $(document).ready(function() {
 
-  const calculateAge = function(date) {
-    const d = new Date();
-    const n = d.getTime();
-    const days = Math.floor((n - date) / (60 * 60 * 24 * 1000));
-    return days;
-  };
-
+  //Append textare text to the article
   const createTweetElement = function(data) {
-    let $tweet = $('<article>').addClass('tweet').append(`<header><img class="profile-icon" src="${data.user.avatars}" /><div class="name">${data.user.name}</div><div class="username">${data.user.handle}</div></header><div class="tweetText">${data.content.text}</div><footer><date>${calculateAge(data.created_at)} days ago </date><div class="social-media-icons"><ul><li><i class="fas fa-flag"></i></li><li><i class="fas fa-retweet"></i></li><li><i class="fas fa-heart"></i></li></ul></div></footer>`);
+    const calculateAge = moment(data.created_at).fromNow();
+    console.log(calculateAge);
+    let $tweet = $('<article>').addClass('tweet').append(`<header><img class="profile-icon" src="${data.user.avatars}" /><div class="name">${data.user.name}</div><div class="username">${data.user.handle}</div></header><div class="tweetText">${data.content.text}</div><footer><date>${calculateAge}</date><div class="social-media-icons"><ul><li><i class="fas fa-flag"></i></li><li><i class="fas fa-retweet"></i></li><li><i class="fas fa-heart"></i></li></ul></div></footer>`);
     return $tweet;
   };
 
+  //Prepend the newTweet to the tweet container
   const renderTweet = function(tweet) {
     $('#tweet-container').prepend(createTweetElement(tweet));
   };
 
-
+  //Render each tweet in the data array
   const renderTweets = function(tweets) {
     for (const tweet of tweets) {
       renderTweet(tweet);
     }
   };
 
+  //Validate that the textarea input is valid
   const formValidation = function(form) {
     if (form.length > 140) {
       return "This tweet is too long. Please reduce it to 140 characters";
@@ -43,6 +41,7 @@ $(document).ready(function() {
     }
   };
 
+  //Display the compose tweet section on the nav button click
   $('#write-tweet').click(function() {
     $("#new-tweet").slideToggle();
     $("textarea").focus();
@@ -55,6 +54,7 @@ $(document).ready(function() {
     }, 1000);
   });
 
+  //Animate the down arrow on the write a new tweet button
   const loop = function() {
     $('#write-tweet').animate({
       'top': '40'
