@@ -7,8 +7,9 @@ This repository is the starter code for the project: Students will fork and clon
 ## Screenshots
 !["Gif of the Tweeter user experience on mobile"](https://github.com/mxmitch/tweeter/blob/master/docs/tweeter_mobile_screen.gif?raw=true)
 
-!["Screenshot of the Tweeter desktop user experience"](https://github.com/mxmitch/tweeter/blob/master/docs/tweet_desktop_screen.png?raw=true&s=500)
+!["Screenshot of the Tweeter tablet user experience"](https://github.com/mxmitch/tweeter/blob/master/docs/tweeter_tablet_screen.png?raw=true&s=500)
 
+!["Screenshot of the Tweeter desktop user experience"](https://github.com/mxmitch/tweeter/blob/master/docs/tweet_desktop_screen.png?raw=true&s=500)
 
 ## Getting Started
 
