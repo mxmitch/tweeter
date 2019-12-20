@@ -1,4 +1,7 @@
 form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 2em;
 }
@@ -12,13 +15,15 @@ textarea {
   border-bottom: 3px solid black;
   font-size: 20px;
   color: #000;
+  margin-bottom: 0.5em;
 }
 
 form span {
   color: #545149;
   font-size: 24px;
-  float: right;
   font-family: Bungee;
+  width: 75%;
+  text-align: right;
 }
 
 form input {
@@ -27,6 +32,7 @@ form input {
   font-family: Bungee;
   color: #FFF;
   padding: 0.25em;
+  width: 25%;
 }
 
 .counter {
