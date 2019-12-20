@@ -11,4 +11,21 @@ $(document).ready(function() {
       $(this).siblings(".counter").css('color', 'black');
     }
   });
+
+  $(window).scroll(function() {
+    if (window.scrollY === 0) {
+      $(".header-padding span").show();
+      $("#back-to-top").hide();
+    } else {
+      $(".header-padding span").hide();
+      $("#back-to-top").show();
+    }
+  });
+
+  $("#back-to-top").click(function() {
+    $(".header-padding span").hide();
+    $('html, body').animate({
+      scrollTop: '0px'
+    }, 300);
+  });
 });

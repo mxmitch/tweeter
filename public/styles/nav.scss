@@ -1,0 +1,43 @@
+nav {
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  z-index: 1;
+  background-color: #4056A1;
+  color: #FFF;
+}
+
+.header-padding {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 1.5em;
+  right: 1.5em;
+  left: 1.5em;
+}
+
+h1 {
+  font-family: 'Bungee', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 20pt;
+  margin: 0;
+}
+
+span {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+}
+
+.chevron {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 1.5em;
+  right: 3em;
+  display: block;
+  color: red;
+}

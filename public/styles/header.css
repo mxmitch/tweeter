@@ -4,8 +4,8 @@
   top: 120px;
   height: 400px;
   width: 100%;
-  background-color: #d89922;
-  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
   margin-bottom: 1em;
 }
 

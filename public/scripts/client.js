@@ -43,30 +43,26 @@ $(document).ready(function() {
     }
   };
 
-  $('#animate').click(function() {
-    if ($("#new-tweet").first().is(":hidden")) {
-      $("#new-tweet").show("slow");
-    } else {
-      $("#new-tweet").slideUp();
-    }
+  $('#write-tweet').click(function() {
+    $("#new-tweet").slideToggle();
+    $("textarea").focus();
   });
 
-  $('#animate').click(function() {
+  //Scroll to top of the new tweet box
+  $('#write-tweet').click(function() {
     $('html, body').animate({
       scrollTop: $("#new-tweet").offset().top - $("nav").height()
     }, 1000);
   });
 
-
-
   const loop = function() {
-    $('#animate').animate({
-      'top': '45'
+    $('#write-tweet').animate({
+      'top': '40'
     }, {
       duration: 1000,
       complete: function() {
-        $('#animate').animate({
-          top: '30'
+        $('#write-tweet').animate({
+          top: '25'
         }, {
           duration: 1000,
           complete: loop
@@ -116,4 +112,10 @@ $(document).ready(function() {
       });
   };
   loadTweets();
+
+  //Taken from Stackoverflow - textarea resizes to fit text height
+  $('textarea').on('input', function() {
+    this.style.height = 'auto';
+    this.style.height = (this.scrollHeight) + 'px';
+  });
 });
