@@ -26,13 +26,17 @@ form span {
   text-align: right;
 }
 
+.button-container {
+  width: 25%;
+}
+
 form input {
   background-color: #4056a1;
   font-size: 16px;
   font-family: Bungee;
   color: #FFF;
   padding: 0.25em;
-  width: 25%;
+  width: 100px;
 }
 
 .counter {
